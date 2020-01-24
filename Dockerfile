@@ -5,8 +5,5 @@ LABEL org.label-schema.vcs-url=https://github.com/sdelements/gitlab-ci-dockerjs-
 RUN apk add --update --no-cache python py-pip python-dev git docker openssh openssl-dev \
     curl make gcc g++ linux-headers binutils-gold gnupg libstdc++ libffi-dev && \
     pip install docker-compose && pip install virtualenv
-# Start docker
-RUN service docker start
 
-ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["sh"]
