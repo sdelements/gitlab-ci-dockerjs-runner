@@ -1,4 +1,4 @@
-FROM node:10.18.1-alpine3.11
+FROM node:14-alpine
 
 LABEL org.label-schema.vcs-url=https://github.com/sdelements/gitlab-ci-dockerjs-runner org.label-schema.vendor=sdelements org.label-schema.name=gitlab-ci-dockerjs-runner
 
